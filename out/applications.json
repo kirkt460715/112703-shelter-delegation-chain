@@ -1,0 +1,18 @@
+[
+  {
+    "id": "app-case1-2026",
+    "case_id": "case-1",
+    "applicant": "r2",
+    "at": 59,
+    "to": "r2",
+    "reason": "root-1 被撤回，child-1 路径失效，申请重新指定",
+    "original_basis": "child-1",
+    "original_basis_valid_now": false,
+    "withdrawal_impact": {
+      "id": "withdraw-1",
+      "target": "root-1",
+      "at": 50
+    },
+    "status": "requested"
+  }
+]

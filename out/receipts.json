@@ -1,0 +1,43 @@
+[
+  {
+    "id": "rcpt-1",
+    "kind": "transfer-application",
+    "ok": true,
+    "at": 59,
+    "actor": "r2",
+    "application_id": "app-case1-2026",
+    "case_id": "case-1",
+    "to": "r2"
+  },
+  {
+    "id": "rcpt-2",
+    "kind": "grant-issued",
+    "ok": true,
+    "at": 59,
+    "actor": "site-lead-a",
+    "grant_id": "grant-case1-r2",
+    "holder": "r2",
+    "case_id": "case-1"
+  },
+  {
+    "id": "rcpt-accept-r2",
+    "kind": "acceptance",
+    "ok": true,
+    "at": 60,
+    "actor": "r2",
+    "grant_id": "grant-case1-r2",
+    "accepted": true
+  },
+  {
+    "id": "rcpt-assign-case1",
+    "kind": "reassignment",
+    "ok": true,
+    "at": 60,
+    "actor": "r2",
+    "case_id": "case-1",
+    "handler": "r2",
+    "basis_id": "grant-case1-r2",
+    "basis_is_new": true,
+    "back_to_original_handler": true
+  }
+]

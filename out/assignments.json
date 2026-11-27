@@ -1,0 +1,14 @@
+[
+  {
+    "id": "asgn-case1-current",
+    "case_id": "case-1",
+    "handler": "r2",
+    "basis_id": "grant-case1-r2",
+    "at": 60,
+    "current": true,
+    "previous_assignment": null,
+    "original_basis": "child-1",
+    "basis_is_new": true,
+    "receipt_id": "rcpt-assign-case1"
+  }
+]

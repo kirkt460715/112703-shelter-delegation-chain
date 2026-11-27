@@ -1,0 +1,293 @@
+{
+  "as_of": 58,
+  "case1_original_path": {
+    "basis": "child-1",
+    "found": true,
+    "valid": false,
+    "in_force_at": false,
+    "standing_ok": true,
+    "structural_ok": true,
+    "defects": [],
+    "time_issues": [],
+    "withdrawn_on_path": {
+      "id": "withdraw-1",
+      "target": "root-1",
+      "at": 50
+    },
+    "chain": [
+      "root-1",
+      "child-1"
+    ],
+    "holder": "r2",
+    "issuer": "site-lead-a",
+    "scope": {
+      "zone": "a",
+      "actions": [
+        "contact"
+      ],
+      "until": 67,
+      "confirmed_from": 34
+    },
+    "standing": [
+      {
+        "person": "r1",
+        "known": true,
+        "current": true,
+        "affiliations": [
+          "west"
+        ],
+        "controls": [],
+        "records": [
+          "staff-1"
+        ]
+      },
+      {
+        "person": "r2",
+        "known": true,
+        "current": true,
+        "affiliations": [
+          "west"
+        ],
+        "controls": [],
+        "records": [
+          "staff-2"
+        ]
+      }
+    ],
+    "at": 58
+  },
+  "case2_independent_basis": {
+    "person": "r2",
+    "zone": "b",
+    "action": "room",
+    "at": 58,
+    "identity": {
+      "person": "r2",
+      "known": true,
+      "current": true,
+      "affiliations": [
+        "west"
+      ],
+      "controls": [],
+      "records": [
+        "staff-2"
+      ]
+    },
+    "basis_id": "root-2",
+    "authorized": true,
+    "covers_scope": true,
+    "holder_matches": true,
+    "basis": {
+      "basis": "root-2",
+      "found": true,
+      "valid": true,
+      "in_force_at": true,
+      "standing_ok": true,
+      "structural_ok": true,
+      "defects": [],
+      "time_issues": [],
+      "withdrawn_on_path": null,
+      "chain": [
+        "root-2"
+      ],
+      "holder": "r2",
+      "issuer": "site-lead-b",
+      "scope": {
+        "zone": "b",
+        "actions": [
+          "room"
+        ],
+        "until": 85,
+        "confirmed_from": 39
+      },
+      "standing": [
+        {
+          "person": "r2",
+          "known": true,
+          "current": true,
+          "affiliations": [
+            "west"
+          ],
+          "controls": [],
+          "records": [
+            "staff-2"
+          ]
+        }
+      ],
+      "at": 58
+    }
+  },
+  "r2_a_contact_without_new_grant": {
+    "person": "r2",
+    "zone": "a",
+    "action": "contact",
+    "at": 58,
+    "identity": {
+      "person": "r2",
+      "known": true,
+      "current": true,
+      "affiliations": [
+        "west"
+      ],
+      "controls": [],
+      "records": [
+        "staff-2"
+      ]
+    },
+    "authorized": false,
+    "selection_required": false,
+    "unambiguous": false,
+    "basis_ids": [],
+    "available_bases": [],
+    "reason": "r2 在 58 没有覆盖 a/contact 的有效依据"
+  },
+  "r2_a_room_cannot_widen": {
+    "person": "r2",
+    "zone": "a",
+    "action": "room",
+    "at": 40,
+    "identity": {
+      "person": "r2",
+      "known": true,
+      "current": true,
+      "affiliations": [
+        "west"
+      ],
+      "controls": [],
+      "records": [
+        "staff-2"
+      ]
+    },
+    "basis_id": "child-1",
+    "authorized": false,
+    "covers_scope": false,
+    "holder_matches": true,
+    "basis": {
+      "basis": "child-1",
+      "found": true,
+      "valid": true,
+      "in_force_at": true,
+      "standing_ok": true,
+      "structural_ok": true,
+      "defects": [],
+      "time_issues": [],
+      "withdrawn_on_path": null,
+      "chain": [
+        "root-1",
+        "child-1"
+      ],
+      "holder": "r2",
+      "issuer": "site-lead-a",
+      "scope": {
+        "zone": "a",
+        "actions": [
+          "contact"
+        ],
+        "until": 67,
+        "confirmed_from": 34
+      },
+      "standing": [
+        {
+          "person": "r1",
+          "known": true,
+          "current": true,
+          "affiliations": [
+            "west"
+          ],
+          "controls": [],
+          "records": [
+            "staff-1"
+          ]
+        },
+        {
+          "person": "r2",
+          "known": true,
+          "current": true,
+          "affiliations": [
+            "west"
+          ],
+          "controls": [],
+          "records": [
+            "staff-2"
+          ]
+        }
+      ],
+      "at": 40
+    },
+    "reason": "依据范围 {'zone': 'a', 'actions': ['contact'], 'until': 67, 'confirmed_from': 34} 不覆盖 a/room@40"
+  },
+  "prior_contact_was_lawful_at_44": {
+    "person": "r2",
+    "zone": "a",
+    "action": "contact",
+    "at": 44,
+    "identity": {
+      "person": "r2",
+      "known": true,
+      "current": true,
+      "affiliations": [
+        "west"
+      ],
+      "controls": [],
+      "records": [
+        "staff-2"
+      ]
+    },
+    "basis_id": "child-1",
+    "authorized": true,
+    "covers_scope": true,
+    "holder_matches": true,
+    "basis": {
+      "basis": "child-1",
+      "found": true,
+      "valid": true,
+      "in_force_at": true,
+      "standing_ok": true,
+      "structural_ok": true,
+      "defects": [],
+      "time_issues": [],
+      "withdrawn_on_path": null,
+      "chain": [
+        "root-1",
+        "child-1"
+      ],
+      "holder": "r2",
+      "issuer": "site-lead-a",
+      "scope": {
+        "zone": "a",
+        "actions": [
+          "contact"
+        ],
+        "until": 67,
+        "confirmed_from": 34
+      },
+      "standing": [
+        {
+          "person": "r1",
+          "known": true,
+          "current": true,
+          "affiliations": [
+            "west"
+          ],
+          "controls": [],
+          "records": [
+            "staff-1"
+          ]
+        },
+        {
+          "person": "r2",
+          "known": true,
+          "current": true,
+          "affiliations": [
+            "west"
+          ],
+          "controls": [],
+          "records": [
+            "staff-2"
+          ]
+        }
+      ],
+      "at": 44
+    }
+  }
+}

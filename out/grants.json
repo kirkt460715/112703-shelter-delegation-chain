@@ -1,0 +1,19 @@
+[
+  {
+    "id": "grant-case1-r2",
+    "issuer": "site-lead-a",
+    "holder": "r2",
+    "zone": "a",
+    "actions": [
+      "contact"
+    ],
+    "can_pass": [],
+    "until": 66,
+    "issued_at": 59,
+    "confirmed_at": 60,
+    "status": "confirmed",
+    "replaces": "child-1",
+    "new_basis_for": "case-1",
+    "note": "撤回后重新指定；新编号、新期限，不复活 root-1/child-1"
+  }
+]

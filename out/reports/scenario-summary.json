@@ -1,0 +1,210 @@
+{
+  "before": {
+    "case-1": {
+      "status": "open",
+      "original_basis": "child-1",
+      "valid_at_taken": true,
+      "original_basis_currently_valid": false,
+      "can_continue_now": false,
+      "responsible_person": "r2",
+      "responsible_persons": [
+        "site-lead-a"
+      ],
+      "withdrawal_impact": {
+        "id": "withdraw-1",
+        "target": "root-1",
+        "at": 50
+      }
+    },
+    "case-2": {
+      "status": "recorded",
+      "original_basis": "root-2",
+      "valid_at_taken": true,
+      "original_basis_currently_valid": true,
+      "can_continue_now": true,
+      "responsible_person": "r2",
+      "responsible_persons": [
+        "r2",
+        "site-lead-b"
+      ],
+      "withdrawal_impact": null
+    },
+    "prior-contact": {
+      "status": "done",
+      "original_basis": "child-1",
+      "valid_at_taken": true,
+      "original_basis_currently_valid": false,
+      "can_continue_now": false,
+      "responsible_person": "r2",
+      "responsible_persons": [
+        "site-lead-a"
+      ],
+      "withdrawal_impact": {
+        "id": "withdraw-1",
+        "target": "root-1",
+        "at": 50
+      }
+    }
+  },
+  "application_id": "app-case1-2026",
+  "new_grant_id": "grant-case1-r2",
+  "acceptance_receipt": "rcpt-accept-r2",
+  "assignment_receipt": "rcpt-assign-case1",
+  "after_case1": {
+    "id": "case-1",
+    "zone": "a",
+    "action": "contact",
+    "status": "open",
+    "done": false,
+    "taken_at": 35,
+    "original_basis": "child-1",
+    "original_chain": [
+      "root-1",
+      "child-1"
+    ],
+    "valid_at_taken": true,
+    "historical_basis": {
+      "basis": "child-1",
+      "valid": true,
+      "in_force_at": true,
+      "chain": [
+        "root-1",
+        "child-1"
+      ],
+      "scope": {
+        "zone": "a",
+        "actions": [
+          "contact"
+        ],
+        "until": 67,
+        "confirmed_from": 34
+      },
+      "withdrawn_on_path": null,
+      "defects": [],
+      "time_issues": []
+    },
+    "original_basis_currently_valid": false,
+    "withdrawal_impact": {
+      "id": "withdraw-1",
+      "target": "root-1",
+      "at": 50
+    },
+    "current_basis_report": {
+      "basis": "child-1",
+      "valid": false,
+      "in_force_at": false,
+      "chain": [
+        "root-1",
+        "child-1"
+      ],
+      "scope": {
+        "zone": "a",
+        "actions": [
+          "contact"
+        ],
+        "until": 67,
+        "confirmed_from": 34
+      },
+      "withdrawn_on_path": {
+        "id": "withdraw-1",
+        "target": "root-1",
+        "at": 50
+      },
+      "defects": [],
+      "time_issues": []
+    },
+    "claimant": "r2",
+    "claimant_other_bases": [
+      "grant-case1-r2"
+    ],
+    "current_assignment": {
+      "handler": "r2",
+      "basis_id": "grant-case1-r2",
+      "at": 60,
+      "receipt_id": "rcpt-assign-case1"
+    },
+    "responsible_person": "r2",
+    "can_continue_now": true,
+    "continuation_basis": "grant-case1-r2",
+    "denial_reason": null,
+    "eligible_handlers": [
+      {
+        "person": "r2",
+        "kinds": [
+          "agent"
+        ],
+        "bases": [
+          {
+            "kind": "delegation",
+            "basis": "grant-case1-r2",
+            "chain": [
+              "grant-case1-r2"
+            ],
+            "until": 66
+          }
+        ],
+        "position": {
+          "person": "r2",
+          "known": true,
+          "current": true,
+          "affiliations": [
+            "west"
+          ],
+          "controls": [],
+          "records": [
+            "staff-2"
+          ]
+        }
+      },
+      {
+        "person": "site-lead-a",
+        "kinds": [
+          "principal"
+        ],
+        "bases": [
+          {
+            "kind": "control",
+            "basis": "lead-a",
+            "zones": [
+              "a"
+            ]
+          }
+        ],
+        "position": {
+          "person": "site-lead-a",
+          "known": true,
+          "current": true,
+          "affiliations": [],
+          "controls": [
+            "a"
+          ],
+          "records": [
+            "lead-a"
+          ]
+        }
+      }
+    ],
+    "responsible_persons": [
+      "r2",
+      "site-lead-a"
+    ],
+    "principal_persons": [
+      "site-lead-a"
+    ],
+    "agent_persons": [
+      "r2"
+    ],
+    "lawful_completion_preserved": false,
+    "at": 60
+  },
+  "artifacts": [
+    "applications.json",
+    "assignments.json",
+    "grants.json",
+    "receipts.json",
+    "reports/checks.json",
+    "reports/report-after.json",
+    "reports/report-before.json",
+    "reports/report.json"
+  ]
+}

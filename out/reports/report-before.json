@@ -1,0 +1,362 @@
+{
+  "as_of": 58,
+  "cases": [
+    {
+      "id": "case-1",
+      "zone": "a",
+      "action": "contact",
+      "status": "open",
+      "done": false,
+      "taken_at": 35,
+      "original_basis": "child-1",
+      "original_chain": [
+        "root-1",
+        "child-1"
+      ],
+      "valid_at_taken": true,
+      "historical_basis": {
+        "basis": "child-1",
+        "valid": true,
+        "in_force_at": true,
+        "chain": [
+          "root-1",
+          "child-1"
+        ],
+        "scope": {
+          "zone": "a",
+          "actions": [
+            "contact"
+          ],
+          "until": 67,
+          "confirmed_from": 34
+        },
+        "withdrawn_on_path": null,
+        "defects": [],
+        "time_issues": []
+      },
+      "original_basis_currently_valid": false,
+      "withdrawal_impact": {
+        "id": "withdraw-1",
+        "target": "root-1",
+        "at": 50
+      },
+      "current_basis_report": {
+        "basis": "child-1",
+        "valid": false,
+        "in_force_at": false,
+        "chain": [
+          "root-1",
+          "child-1"
+        ],
+        "scope": {
+          "zone": "a",
+          "actions": [
+            "contact"
+          ],
+          "until": 67,
+          "confirmed_from": 34
+        },
+        "withdrawn_on_path": {
+          "id": "withdraw-1",
+          "target": "root-1",
+          "at": 50
+        },
+        "defects": [],
+        "time_issues": []
+      },
+      "claimant": "r2",
+      "claimant_other_bases": [],
+      "current_assignment": null,
+      "responsible_person": "r2",
+      "can_continue_now": false,
+      "continuation_basis": null,
+      "denial_reason": "r2 在 58 没有覆盖 a/contact 的有效依据",
+      "eligible_handlers": [
+        {
+          "person": "site-lead-a",
+          "kinds": [
+            "principal"
+          ],
+          "bases": [
+            {
+              "kind": "control",
+              "basis": "lead-a",
+              "zones": [
+                "a"
+              ]
+            }
+          ],
+          "position": {
+            "person": "site-lead-a",
+            "known": true,
+            "current": true,
+            "affiliations": [],
+            "controls": [
+              "a"
+            ],
+            "records": [
+              "lead-a"
+            ]
+          }
+        }
+      ],
+      "responsible_persons": [
+        "site-lead-a"
+      ],
+      "principal_persons": [
+        "site-lead-a"
+      ],
+      "agent_persons": [],
+      "lawful_completion_preserved": false,
+      "at": 58
+    },
+    {
+      "id": "case-2",
+      "zone": "b",
+      "action": "room",
+      "status": "recorded",
+      "done": null,
+      "taken_at": 58,
+      "original_basis": "root-2",
+      "original_chain": [
+        "root-2"
+      ],
+      "valid_at_taken": true,
+      "historical_basis": {
+        "basis": "root-2",
+        "valid": true,
+        "in_force_at": true,
+        "chain": [
+          "root-2"
+        ],
+        "scope": {
+          "zone": "b",
+          "actions": [
+            "room"
+          ],
+          "until": 85,
+          "confirmed_from": 39
+        },
+        "withdrawn_on_path": null,
+        "defects": [],
+        "time_issues": []
+      },
+      "original_basis_currently_valid": true,
+      "withdrawal_impact": null,
+      "current_basis_report": {
+        "basis": "root-2",
+        "valid": true,
+        "in_force_at": true,
+        "chain": [
+          "root-2"
+        ],
+        "scope": {
+          "zone": "b",
+          "actions": [
+            "room"
+          ],
+          "until": 85,
+          "confirmed_from": 39
+        },
+        "withdrawn_on_path": null,
+        "defects": [],
+        "time_issues": []
+      },
+      "claimant": "r2",
+      "claimant_other_bases": [],
+      "current_assignment": null,
+      "responsible_person": "r2",
+      "can_continue_now": true,
+      "continuation_basis": "root-2",
+      "denial_reason": null,
+      "eligible_handlers": [
+        {
+          "person": "r2",
+          "kinds": [
+            "agent"
+          ],
+          "bases": [
+            {
+              "kind": "delegation",
+              "basis": "root-2",
+              "chain": [
+                "root-2"
+              ],
+              "until": 85
+            }
+          ],
+          "position": {
+            "person": "r2",
+            "known": true,
+            "current": true,
+            "affiliations": [
+              "west"
+            ],
+            "controls": [],
+            "records": [
+              "staff-2"
+            ]
+          }
+        },
+        {
+          "person": "site-lead-b",
+          "kinds": [
+            "principal"
+          ],
+          "bases": [
+            {
+              "kind": "control",
+              "basis": "lead-b",
+              "zones": [
+                "b"
+              ]
+            }
+          ],
+          "position": {
+            "person": "site-lead-b",
+            "known": true,
+            "current": true,
+            "affiliations": [],
+            "controls": [
+              "b"
+            ],
+            "records": [
+              "lead-b"
+            ]
+          }
+        }
+      ],
+      "responsible_persons": [
+        "r2",
+        "site-lead-b"
+      ],
+      "principal_persons": [
+        "site-lead-b"
+      ],
+      "agent_persons": [
+        "r2"
+      ],
+      "lawful_completion_preserved": false,
+      "at": 58
+    },
+    {
+      "id": "prior-contact",
+      "zone": "a",
+      "action": "contact",
+      "status": "done",
+      "done": true,
+      "taken_at": 44,
+      "original_basis": "child-1",
+      "original_chain": [
+        "root-1",
+        "child-1"
+      ],
+      "valid_at_taken": true,
+      "historical_basis": {
+        "basis": "child-1",
+        "valid": true,
+        "in_force_at": true,
+        "chain": [
+          "root-1",
+          "child-1"
+        ],
+        "scope": {
+          "zone": "a",
+          "actions": [
+            "contact"
+          ],
+          "until": 67,
+          "confirmed_from": 34
+        },
+        "withdrawn_on_path": null,
+        "defects": [],
+        "time_issues": []
+      },
+      "original_basis_currently_valid": false,
+      "withdrawal_impact": {
+        "id": "withdraw-1",
+        "target": "root-1",
+        "at": 50
+      },
+      "current_basis_report": {
+        "basis": "child-1",
+        "valid": false,
+        "in_force_at": false,
+        "chain": [
+          "root-1",
+          "child-1"
+        ],
+        "scope": {
+          "zone": "a",
+          "actions": [
+            "contact"
+          ],
+          "until": 67,
+          "confirmed_from": 34
+        },
+        "withdrawn_on_path": {
+          "id": "withdraw-1",
+          "target": "root-1",
+          "at": 50
+        },
+        "defects": [],
+        "time_issues": []
+      },
+      "claimant": "r2",
+      "claimant_other_bases": [],
+      "current_assignment": null,
+      "responsible_person": "r2",
+      "can_continue_now": false,
+      "continuation_basis": null,
+      "denial_reason": "r2 在 58 没有覆盖 a/contact 的有效依据",
+      "eligible_handlers": [
+        {
+          "person": "site-lead-a",
+          "kinds": [
+            "principal"
+          ],
+          "bases": [
+            {
+              "kind": "control",
+              "basis": "lead-a",
+              "zones": [
+                "a"
+              ]
+            }
+          ],
+          "position": {
+            "person": "site-lead-a",
+            "known": true,
+            "current": true,
+            "affiliations": [],
+            "controls": [
+              "a"
+            ],
+            "records": [
+              "lead-a"
+            ]
+          }
+        }
+      ],
+      "responsible_persons": [
+        "site-lead-a"
+      ],
+      "principal_persons": [
+        "site-lead-a"
+      ],
+      "agent_persons": [],
+      "lawful_completion_preserved": true,
+      "at": 58
+    }
+  ],
+  "open_case_ids": [
+    "case-1"
+  ],
+  "unfinished_case_ids": [
+    "case-1",
+    "case-2"
+  ],
+  "continuable_now_ids": [
+    "case-2"
+  ]
+}
