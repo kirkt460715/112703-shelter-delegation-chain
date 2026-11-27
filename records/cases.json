@@ -1,0 +1,25 @@
+[
+  {
+    "id": "case-1",
+    "zone": "a",
+    "action": "contact",
+    "taken_using": "child-1",
+    "at": 35,
+    "done": false
+  },
+  {
+    "id": "case-2",
+    "zone": "b",
+    "action": "room",
+    "taken_using": "root-2",
+    "at": 58
+  },
+  {
+    "id": "prior-contact",
+    "zone": "a",
+    "action": "contact",
+    "taken_using": "child-1",
+    "at": 44,
+    "done": true
+  }
+]

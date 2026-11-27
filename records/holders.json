@@ -1,0 +1,28 @@
+[
+  {
+    "id": "lead-a",
+    "person": "site-lead-a",
+    "controls": [
+      "a"
+    ]
+  },
+  {
+    "id": "lead-b",
+    "person": "site-lead-b",
+    "controls": [
+      "b"
+    ]
+  },
+  {
+    "id": "staff-1",
+    "person": "r1",
+    "affiliation": "west",
+    "valid": true
+  },
+  {
+    "id": "staff-2",
+    "person": "r2",
+    "affiliation": "west",
+    "valid": true
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "root-1",
+    "issuer": "site-lead-a",
+    "zone": "a",
+    "actions": [
+      "room",
+      "contact"
+    ],
+    "holder": "r1",
+    "can_pass": [
+      "contact"
+    ],
+    "until": 70,
+    "confirmed_at": 30
+  },
+  {
+    "id": "child-1",
+    "parent": "root-1",
+    "issuer": "r1",
+    "holder": "r2",
+    "actions": [
+      "contact"
+    ],
+    "until": 67,
+    "confirmed_at": 34
+  },
+  {
+    "id": "root-2",
+    "issuer": "site-lead-b",
+    "zone": "b",
+    "actions": [
+      "room"
+    ],
+    "holder": "r2",
+    "until": 85,
+    "confirmed_at": 39
+  },
+  {
+    "id": "withdraw-1",
+    "for": "root-1",
+    "at": 50
+  }
+]
